@@ -1,9 +1,27 @@
 <template>
-    <div>
-        <h1>Here is Home</h1>
+    <div class="home">
+        <div class="container">
+            <homeTitle></homeTitle>
+            <homeAbout></homeAbout>
+        </div>
     </div>
 </template>
 
-<style lang="sass" scoped>
+<script>
+import homeTitle from "@/components/homeTitle.vue";
+import homeAbout from "@/components/homeAbout.vue";
+
+export default {
+    components: {
+        homeTitle,
+        homeAbout,
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+.home {
+
+}
 
 </style>

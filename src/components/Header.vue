@@ -48,9 +48,6 @@ export default {
     },
     computed: {
         borderState(){
-            if(this.isHome){
-                return "header-border-color-home";
-            }
 
             if(this.isAbout){
                 return "header-border-color-about";
@@ -101,7 +98,7 @@ export default {
 
 <style lang="scss" scoped>
 $home: #F47C00;
-$about: #42CAF6;
+$about: #0082c8;
 $work: #50D331;
 $contact: #E71A00;
 $white: #FFFFFF;
@@ -109,12 +106,12 @@ $transition-time: 0.3s;
 $font: #3C3C3C;
 
 header {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85);
     position:fixed;
     top:0px;
     width: 100%;
     z-index: 10;
-    font-size: 20px;
+    font-size: 18px;
     height: 65px;
     font-weight: bold;
     border-bottom: solid 2.5px $home;
@@ -141,6 +138,7 @@ header {
     margin-right: 100px;
     ul {
         li {
+            font-weight: 500;
             list-style: none;
             float: left;
             margin-right: 40px;
@@ -150,7 +148,7 @@ header {
 
     a {
         text-decoration: none;
-        padding: 5px 25px 5px 25px;
+        padding: 5px 25px 6px 25px;
         display: block;
         transition: all $transition-time;
     }
@@ -162,26 +160,26 @@ header {
 
 .home-li {
     &:hover {
-        border-bottom: solid 3px $home;
+        border-bottom: solid 1.5px $home;
     }
 
 }
 
 .about-li{
     &:hover{
-        border-bottom: solid 3px $about;
+        border-bottom: solid 1.5px $about;
     }
 }
 
 .work-li {
     &:hover{
-        border-bottom: solid 3px $work;
+        border-bottom: solid 1.5px $work;
     }
 }
 
 .contact-li {
     &:hover{
-        border-bottom: solid 3px $contact;
+        border-bottom: solid 1.5px $contact;
     }
 }
 
@@ -191,6 +189,7 @@ header {
 }
 
 .normal-color{
+    // color: $font;
     color: $font;
 }
 
@@ -211,19 +210,20 @@ header {
 }
 
 .header-border-color-home{
-    border-bottom: solid 2.5px $home;
+    // border-bottom: solid 2.7px $home;
+    border-bottom: solid 2px $home;
 }
 
 .header-border-color-about{
-    border-bottom: solid 2.5px $about;
+    border-bottom: solid 2px $about;
 }
 
 .header-border-color-work{
-    border-bottom: solid 2.5px $work;
+    border-bottom: solid 2px $work;
 }
 
 .header-border-color-contact{
-    border-bottom: solid 2.5px $contact;
+    border-bottom: solid 2px $contact;
 }
 
 </style>

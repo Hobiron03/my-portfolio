@@ -22,11 +22,13 @@ export default {
 
 <style>
 #app {
+  /* background-color: #F6F6F6; */
   font-size: 18px;
   font-family: 'M PLUS 1p', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 1400px;
+  
 }
 
 .header-app{
@@ -39,6 +41,6 @@ export default {
 }
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.5s;
+  transition: opacity 0.25s;
 }
 </style>
