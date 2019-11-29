@@ -37,19 +37,29 @@
     </div>
 </template>
 
+<script>
+export default {
+}
+</script>
+
+
 
 <style lang="scss" scoped>
 
 $home: #F47C00;
 
+
 .wrapper {
-    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #F7F7F7;
 }
 
 .container{
     width: 100%;
 
     h1{
+        margin-top: 30px;
         text-align: center;
         font-weight: normal;
     }

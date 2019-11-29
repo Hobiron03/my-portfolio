@@ -46,26 +46,6 @@ export default {
             isContact: false,
         };
     },
-    computed: {
-        borderState(){
-
-            if(this.isAbout){
-                return "header-border-color-about";
-            }
-
-            if(this.isWork)
-            {
-                return "header-border-color-work";
-            }
-
-            if(this.isContact)
-            {
-                return "header-border-color-contact";
-            }
-
-            return "header-border-color-home";
-        }
-    },
     methods: {
         changeToHomeState() {
             this.isHome = true;
@@ -116,6 +96,7 @@ header {
     font-weight: bold;
     border-bottom: solid 2.5px $home;
     transition: all $transition-time;
+
 }
 
 .container {
@@ -162,24 +143,23 @@ header {
     &:hover {
         border-bottom: solid 1.5px $home;
     }
-
 }
 
 .about-li{
     &:hover{
-        border-bottom: solid 1.5px $about;
+        border-bottom: solid 1.5px $home;
     }
 }
 
 .work-li {
     &:hover{
-        border-bottom: solid 1.5px $work;
+        border-bottom: solid 1.5px $home;
     }
 }
 
 .contact-li {
     &:hover{
-        border-bottom: solid 1.5px $contact;
+        border-bottom: solid 1.5px $home;
     }
 }
 
@@ -194,19 +174,19 @@ header {
 }
 
 .pushed-color-home{
-    color: $home;
+    color: $font;
 }
 
 .pushed-color-about{
-    color: $about;
+    color: $font;
 }
 
 .pushed-color-work{
-    color: $work;
+    color: $font;
 }
 
 .pushed-color-contact{
-    color: $contact;
+    color: $font;
 }
 
 .header-border-color-home{
