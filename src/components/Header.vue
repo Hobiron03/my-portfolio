@@ -31,6 +31,7 @@
                     </ul>
                 </nav>
             </div>
+
         </div>
     </header>
 </template>
@@ -118,6 +119,7 @@ header {
     float: right;
     margin-right: 100px;
     ul {
+        line-height: 65px;
         li {
             font-weight: 500;
             list-style: none;

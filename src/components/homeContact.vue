@@ -6,7 +6,7 @@
                 <router-link to="/Contact">お問い合わせフォーム</router-link>
             </p>
         </div>
-        <p style="font-size: 20px;">or</p>
+        <p style="font-size: 22px;">or</p>
         <p style="font-size: 22px;">email: hobirondokidoki5150[@]gmail.com</p>
     </div>
 </template>

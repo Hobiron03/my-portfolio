@@ -6,16 +6,19 @@
     <transition name="fade" mode="out-in">
       <router-view></router-view>
     </transition>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 // import Home from './views/Home.vue';
 import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   components: {
     Header,
+    Footer
   }
 }
 </script>
@@ -43,4 +46,11 @@ export default {
 .fade-leave-active {
   transition: opacity 0.25s;
 }
+
+ul {
+  margin: 0px;
+
+  padding: 0px;
+}
+
 </style>

@@ -5,6 +5,7 @@
             <homeAbout></homeAbout>
             <homeWork></homeWork>
             <homeContact></homeContact>
+
         </div>
     </div>
 </template>
