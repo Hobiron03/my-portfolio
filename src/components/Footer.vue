@@ -2,10 +2,18 @@
         <footer>
             <div class="wrapper">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Work</li>
-                    <li>Contact</li>
+                    <li>
+                        <router-link to="/">Home</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/About">About</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/Work">Work</router-link>
+                    </li>
+                    <li>
+                        <router-link to="/Contact">Contact</router-link>
+                    </li>
                 </ul>
             </div>
         </footer>
@@ -24,6 +32,17 @@ footer {
 
     .wrapper{
         margin: 60px 0 30px 0px;
+
+
+        a{
+            text-decoration: none;
+            color: rgb(31, 31, 31);
+            transition: all 0.2s;
+        }
+
+        a:hover{
+            color: rgb(80, 80, 80);
+        }
     }
         ul {
             display: flex;
