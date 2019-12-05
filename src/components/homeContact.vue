@@ -22,7 +22,7 @@ $home: #F47C00;
     padding-bottom: 10px;
     text-align: center;
     margin: 0 auto;
-    background-color: #F7F7F7;
+    background-color: rgb(252, 252, 252);;
 
     h1{
         font-weight: normal;

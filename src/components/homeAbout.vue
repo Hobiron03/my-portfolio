@@ -52,7 +52,7 @@ $home: #F47C00;
 .wrapper {
     padding-top: 30px;
     padding-bottom: 10px;
-    background-color: #F7F7F7;
+    background-color: rgb(252, 252, 252);
 }
 
 .container{

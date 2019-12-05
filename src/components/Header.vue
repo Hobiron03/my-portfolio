@@ -8,22 +8,22 @@
             <div class="header-right">
                 <nav>
                     <ul>
-                        <li class="home-li change">
+                        <li class="change">
                             <router-link to="/" :class="isHome ? 'pushed-color-home' : 'normal-color'" @click.native="changeToHomeState">
                             <v-fa class="icon" :class="isHome ? 'pushed-color-home' : 'normal-color'" icon="home"/>Home
                             </router-link>
                         </li>
-                        <li class="about-li">
+                        <li>
                             <router-link to="/About" :class="isAbout ? 'pushed-color-about' : 'normal-color'" @click.native="changeToAboutState">
                             <v-fa class="icon" :class="isAbout ? 'pushed-color-about' : 'normal-color'" icon="address-card" />About
                             </router-link>
                         </li >
-                        <li class="work-li">
+                        <li>
                             <router-link to="/Work" :class="isWork ? 'pushed-color-work' : 'normal-color'" @click.native="changeToWorkState">
                             <v-fa class="icon" icon="gamepad" :class="isWork ? 'pushed-color-work' : 'normal-color'"/>Work
                             </router-link>
                         </li>
-                        <li class="contact-li">
+                        <li>
                             <router-link to="/Contact" :class="isContact ? 'pushed-color-contact' : 'normal-color'" @click.native="changeToContactState">
                             <v-fa class="icon" icon="envelope" :class="isContact ? 'pushed-color-contact' : 'normal-color'"/>Contact
                             </router-link>
@@ -79,6 +79,7 @@ export default {
 
 <style lang="scss" scoped>
 $home: #F47C00;
+$home2: rgb(226, 113, 0);
 $about: #0082c8;
 $work: #50D331;
 $contact: #E71A00;
@@ -119,7 +120,6 @@ header {
     float: right;
     margin-right: 100px;
     ul {
-        line-height: 65px;
         li {
             font-weight: 500;
             list-style: none;
@@ -131,37 +131,23 @@ header {
 
     a {
         text-decoration: none;
-        padding: 5px 25px 6px 25px;
-        display: block;
+        margin-top: 17px;
+        padding: 5px 20px 6px 20px;
+        display: inline-block;
         transition: all $transition-time;
+
+    }
+
+    a:hover{
+        border-bottom: solid 2.0px $home;
+        color: $home2;
+        .icon{
+            color: $home2;
+        }
     }
 
     v-fa {
         transition: all 3.0s;
-    }
-}
-
-.home-li {
-    &:hover {
-        border-bottom: solid 1.5px $home;
-    }
-}
-
-.about-li{
-    &:hover{
-        border-bottom: solid 1.5px $home;
-    }
-}
-
-.work-li {
-    &:hover{
-        border-bottom: solid 1.5px $home;
-    }
-}
-
-.contact-li {
-    &:hover{
-        border-bottom: solid 1.5px $home;
     }
 }
 
