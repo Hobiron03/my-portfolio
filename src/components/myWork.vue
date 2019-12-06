@@ -27,7 +27,7 @@ export default {
 .container {
     border: solid 1px #7E7E7E;
     border-radius: 1.5%;
-    max-width: 370px;
+    width: 350px;
     box-shadow: 1px 1px 2px gray;
 
     .background-image{
@@ -40,7 +40,7 @@ export default {
 
     .description {
         margin: 0 auto;
-        width: 92%;
+        width: 90%;
 
         p {
             text-align: left;

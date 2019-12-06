@@ -10,7 +10,7 @@
         "id": 2,
         "name": "KamikamiLab",
         "description": "Vue.jsで作成したポートフォリオです。",
-        "techs": ["HTML", "SCSS", "JavaScript", "Vue.js", "Firebase"],
+        "techs": ["HTML", "SCSS", "Vue.js", "Firebase"],
         "image": "kamikamilab.jpg"
     }
 ]

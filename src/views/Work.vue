@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper{
     max-width: 900px;
-    margin: 150px auto 0px auto;
+    margin: 130px auto 0px auto;
     overflow: hidden;
     h1{
         font-weight: bold;
@@ -36,7 +36,7 @@ export default {
     .container{
         text-align: center;
         margin-top: 30px;
-        margin-left: 32px;
+        margin-left: 38px;
         // display: flex;
         // flex-direction: row;
         float: left;
