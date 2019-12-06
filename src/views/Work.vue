@@ -2,11 +2,9 @@
     <div class="wrapper">
         <h1>Work</h1>
         <div class="container">
-            <div class="f-item">
-
-            </div>
-            <myWork :product-name="works[0].name" :description="works[0].description" :techs="works[0].techs" :image-locate="works[0].imageLocate"></myWork>
-            <myWork :product-name="works[0].name" :description="works[0].description" :techs="works[0].techs" :image-locate="works[0].imageLocate"></myWork>
+            <myWork :product-name="works[0].name" :description="works[0].description" :techs="works[0].techs" :image-locate="works[0].image"></myWork>
+            <myWork :product-name="works[1].name" :description="works[1].description" :techs="works[1].techs" :image-locate="works[1].image"></myWork>
+            <myWork :product-name="works[1].name" :description="works[1].description" :techs="works[1].techs" :image-locate="works[1].image"></myWork>
         </div>
     </div>
 </template>
@@ -30,20 +28,18 @@ export default {
 .wrapper{
     max-width: 900px;
     margin: 150px auto 0px auto;
+    overflow: hidden;
     h1{
         font-weight: bold;
         text-align: center;
     }
     .container{
         text-align: center;
+        margin-top: 30px;
+        margin-left: 32px;
         // display: flex;
         // flex-direction: row;
         float: left;
-        clear: both;
-
-        .f-item{
-
-        }
     }
 }
 

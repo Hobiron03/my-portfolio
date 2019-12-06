@@ -2,7 +2,7 @@
     <div class="wrapper">
         <h1>Work</h1>
         <div class="container">
-            <myWork :product-name="works[0].name" :description="works[0].description" :techs="works[0].techs" :image-locate="works[0].imageLocate"></myWork>
+            <myWork :product-name="works[0].name" :description="works[0].description" :techs="works[0].techs" :image-locate="works[0].image"></myWork>
         </div>
         <p class="discriptionButton">
             <router-link to="/Work">他の作品も見る</router-link>

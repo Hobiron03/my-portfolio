@@ -35,7 +35,7 @@ export default {
         background-size: cover;
         margin: 0 auto;
         max-width: 92%;
-        height: 350px;
+        height: 320px;
     }
 
     .description {

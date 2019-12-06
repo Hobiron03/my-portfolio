@@ -4,12 +4,13 @@
         "name": "シロフミ",
         "description": "Unityを使用して作成した、ios向けのカジュアルゲームです",
         "techs": ["Unity", "C#"],
-        "imageLocate": "shiro.png"
+        "image": "shiro.png"
     },
     {
         "id": 2,
         "name": "KamikamiLab",
         "description": "Vue.jsで作成したポートフォリオです。",
-        "techs": ["HTML", "SCSS", "JavaScript", "Vue.js", "Firebase"]
+        "techs": ["HTML", "SCSS", "JavaScript", "Vue.js", "Firebase"],
+        "image": "kamikamilab.jpg"
     }
 ]
