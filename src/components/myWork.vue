@@ -15,7 +15,7 @@ export default {
     props: ['productName', 'description', 'techs', 'imageLocate'],
     data(){
         return{
-            backgroundImage: require("@/assets/shiro.png")
+            backgroundImage: require("@/assets/" + this.imageLocate)
         }
     }
 }

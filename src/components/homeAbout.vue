@@ -62,7 +62,7 @@ $home: #F47C00;
     h1{
         margin-top: 30px;
         text-align: center;
-        font-weight: normal;
+        font-weight: bold;
     }
 
     .profile {

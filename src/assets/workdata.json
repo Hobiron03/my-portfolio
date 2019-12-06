@@ -4,7 +4,7 @@
         "name": "シロフミ",
         "description": "Unityを使用して作成した、ios向けのカジュアルゲームです",
         "techs": ["Unity", "C#"],
-        "imageLocate": "../assets/shiro.png"
+        "imageLocate": "shiro.png"
     },
     {
         "id": 2,

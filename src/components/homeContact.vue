@@ -31,7 +31,7 @@ $home: #F47C00;
     background-color: rgb(252, 252, 252);;
 
     h1{
-        font-weight: normal;
+        font-weight: bold;
     }
 
     .discriptionButton {

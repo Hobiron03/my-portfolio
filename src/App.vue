@@ -28,10 +28,10 @@ export default {
 #app {
   /* background-color: #F6F6F6; */
   font-size: 18px;
+  color: rgb(49, 49, 49);
   font-family: 'M PLUS 1p', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 1400px;
   
 }
 

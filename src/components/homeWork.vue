@@ -5,7 +5,7 @@
             <myWork :product-name="works[0].name" :description="works[0].description" :techs="works[0].techs" :image-locate="works[0].imageLocate"></myWork>
         </div>
         <p class="discriptionButton">
-            <router-link to="/About">他の作品も見る</router-link>
+            <router-link to="/Work">他の作品も見る</router-link>
         </p>
     </div>
 </template>
@@ -37,7 +37,7 @@ $home: #F47C00;
     background-color: #ffffff;
 
     h1{
-        font-weight: normal;
+        font-weight: bold;
     }
 }
 
