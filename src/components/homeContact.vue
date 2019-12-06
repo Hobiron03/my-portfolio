@@ -1,13 +1,15 @@
 <template>
-    <div class="container">
-        <h1>Contact</h1>
-        <div class="formButton">
-            <p class="discriptionButton">
-                <router-link to="/Contact">お問い合わせフォーム</router-link>
-            </p>
+    <div class="wrapper">
+        <div class="container">
+            <h1>Contact</h1>
+            <div class="formButton">
+                <p class="discriptionButton">
+                    <router-link to="/Contact">お問い合わせフォーム</router-link>
+                </p>
+            </div>
+            <p style="font-size: 22px;">or</p>
+            <p style="font-size: 22px;">email: hobirondokidoki5150[@]gmail.com</p>
         </div>
-        <p style="font-size: 22px;">or</p>
-        <p style="font-size: 22px;">email: hobirondokidoki5150[@]gmail.com</p>
     </div>
 </template>
 
@@ -15,6 +17,10 @@
 <style lang="scss" scoped>
 
 $home: #F47C00;
+
+.wrapper{
+    margin-top: 80px;
+}
 
 
 .container{

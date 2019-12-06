@@ -1,5 +1,5 @@
 <template>
-    <header :class="borderState">
+    <header>
         <div class="container">
             <div class="header-left">
                  <router-link to="/" @click.native="changeToHomeState"><h3>KamikamiLab</h3></router-link>
@@ -96,7 +96,7 @@ header {
     font-size: 18px;
     height: 65px;
     font-weight: bold;
-    border-bottom: solid 2.5px $home;
+    border-bottom: solid 1.5px $home;
     transition: all $transition-time;
 
 }

@@ -16,7 +16,9 @@
                     </li>
                 </ul>
             </div>
+            <p class="copyright">© 2019 Yudai Kawakami.</p>
         </footer>
+        
 </template>
 
 
@@ -53,6 +55,13 @@ footer {
                 list-style: none;
             }
         }
+}
+
+.copyright{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: rgb(90, 90, 90);
 }
 
 

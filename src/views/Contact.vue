@@ -1,3 +1,15 @@
 <template>
-    <p>Here is Contact</p>
+    <div>
+            <h2>Contact</h2>
+    </div>
 </template>
+
+<script>
+export default {
+    
+}
+</script>
+
+<style lang="sass" scoped>
+
+</style>

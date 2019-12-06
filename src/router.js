@@ -16,5 +16,5 @@ export default new Router({
         {path: '/Work', component: Work},
         {path: '/Contact', component: Contact},
         {path: '/*', redirect: '/'},
-    ]
+    ],
 })

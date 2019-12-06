@@ -27,7 +27,7 @@
                     </div>
 
                     <div class="under">
-                        <p>1997年4月3日生まれ。滋賀県の理系の大学に通う４回生です。将来は空間を楽しくできるようなクリエイターになりたい。</p>
+                        <p>1997年4月3日生まれ。滋賀県の理系の大学に通う４回生です。将来は空間を楽しくできるようなモノを作るクリエイターになりたいです。</p>
                     </div>
 
                 </div>
@@ -57,6 +57,7 @@ $home: #F47C00;
 
 .container{
     width: 100%;
+    
 
     h1{
         margin-top: 30px;
@@ -71,6 +72,7 @@ $home: #F47C00;
         background-color: white;
         border: solid 0.2px #7E7E7E;
         height: 250px;
+        box-shadow: 1px 1px 2px gray;
 
         .profile-left{
             // 写真ぶぶん
