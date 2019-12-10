@@ -164,6 +164,7 @@ $home: #F47C00;
             .under {
                 text-align: left;
                 margin-top: 50px;
+                width: 90%;
             }
 
         }

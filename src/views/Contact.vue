@@ -29,7 +29,7 @@ $home: #F47C00;
 
 .wrapper{
     max-width: 670px;
-    margin: 150px auto 0px auto;
+    margin: 130px auto 0px auto;
     h1{
         font-weight: bold;
     }
@@ -53,7 +53,7 @@ $home: #F47C00;
         height: 30px;
         margin-bottom:10px;
         border-radius: 2px;
-        border: 1px solid rgb(75, 75, 75);
+        border: 1px solid rgb(145, 145, 145);
         font-size: 18px;
     }
 
@@ -62,7 +62,7 @@ $home: #F47C00;
         height: 200px;
         margin-bottom:10px;
         border-radius: 2px;
-        border: 1px solid rgb(75, 75, 75);
+        border: 1px solid rgb(145, 145, 145);
         font-size: 18px;
     }
 }

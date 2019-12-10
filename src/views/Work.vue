@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 .wrapper{
     max-width: 900px;
-    margin: 130px auto 0px auto;
+    margin: 110px auto 0px auto;
     overflow: hidden;
     h1{
         font-weight: bold;
