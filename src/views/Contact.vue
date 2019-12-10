@@ -2,24 +2,55 @@
     <div class="wrapper">
         <div class="container">
             <h1>Contact</h1>
+            <p>{{message}}</p>
             <div class="form">
                 <p class="label"><label>お名前</label><br></p>
-                <input class="line-form" type="text" name="name" placeholder="name" value="" >
+                <input class="line-form" type="text" name="name" placeholder="name" v-model="contactForm.name">
                 <p class="label"><label>メールアドレス</label><br></p>
-                <input class="line-form" type="text" name="email" placeholder="email" value="" >
+                <input class="line-form" type="text" name="email" placeholder="email" v-model="contactForm.email">
                 <p class="label"><label>お問い合わせ内容</label><br></p>
-                <textarea class="text-form" name="contain" id="" cols="30" rows="10" placeholder="好きなことを書いてください。"></textarea>
+                <textarea class="text-form" name="contain" id="" cols="30" rows="10" placeholder="好きなことを書いてください。" v-model="contactForm.contents"></textarea>
             </div>
             <p class="discriptionButton">
-                <router-link to="/Contact">送信</router-link>
+                <button @click="sendMail" class="send-button">送信</button>
+                <!-- <router-link to="/Contact">送信</router-link> -->
             </p>
         </div>
     </div>
 </template>
 
 <script>
+import { functions } from '@/plugins/firebase'
 export default {
-    
+    data(){
+        return{
+            contactForm: {
+                name: '',
+                email: '',
+                contents: '',
+            },
+            message: "",
+        }
+    },
+    methods: {
+        sendMail() {
+            const mailer = functions.httpsCallable('sendMail');
+
+            mailer(this.contactForm)
+            .then(() => {
+                this.formReset();
+                this.message = "送信したよ";
+            })
+            .catch(err => {
+                this.message = err
+            })
+        },
+        formReset() {
+            this.contactForm.name = "",
+            this.contactForm.email = "",
+            this.contactForm.contents = ""
+        }
+    }
 }
 </script>
 
@@ -69,7 +100,7 @@ $home: #F47C00;
 
     .discriptionButton {
 
-        a {
+        button {
             margin: 0 auto;
             display: block;
             padding: 10px 15px;
@@ -86,6 +117,10 @@ $home: #F47C00;
                 background-color: $home;
                 color: white;
             }
+        }
+
+        .send-button:hover{
+            cursor: pointer;
         }
     }
 
