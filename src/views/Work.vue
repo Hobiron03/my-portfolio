@@ -4,7 +4,7 @@
         <div class="container">
             <myWork :product-name="works[0].name" :description="works[0].description" :techs="works[0].techs" :image-locate="works[0].image"></myWork>
             <myWork :product-name="works[1].name" :description="works[1].description" :techs="works[1].techs" :image-locate="works[1].image"></myWork>
-            <myWork :product-name="works[1].name" :description="works[1].description" :techs="works[1].techs" :image-locate="works[1].image"></myWork>
+            <!-- <myWork :product-name="works[1].name" :description="works[1].description" :techs="works[1].techs" :image-locate="works[1].image"></myWork> -->
         </div>
     </div>
 </template>

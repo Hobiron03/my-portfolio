@@ -1,8 +1,10 @@
 <template>
     <div class="wrapper">
         <div class="container">
+            <transition name="fade" mode="out-in">
+                <p class="sendMessage" v-if="show">送信しました</p>
+            </transition>
             <h1>Contact</h1>
-            <p>{{message}}</p>
             <div class="form">
                 <p class="label"><label>お名前</label><br></p>
                 <input class="line-form" type="text" name="name" placeholder="name" v-model="contactForm.name">
@@ -30,6 +32,7 @@ export default {
                 contents: '',
             },
             message: "",
+            show: false,
         }
     },
     methods: {
@@ -39,16 +42,18 @@ export default {
             mailer(this.contactForm)
             .then(() => {
                 this.formReset();
-                this.message = "送信したよ";
+                this.message = "送信しました";
             })
             .catch(err => {
                 this.message = err
             })
         },
         formReset() {
+            this.show = true;
             this.contactForm.name = "",
             this.contactForm.email = "",
             this.contactForm.contents = ""
+
         }
     }
 }
@@ -66,6 +71,7 @@ $home: #F47C00;
     }
     .container{
         text-align: center;
+        position: relative;
     }
 }
 
@@ -122,6 +128,20 @@ $home: #F47C00;
         .send-button:hover{
             cursor: pointer;
         }
+
+    }
+
+    .sendMessage {
+        width: 100%;
+        font-weight: bold;
+        color: #F47C00;
+    }
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+    }
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
     }
 
 </style>
